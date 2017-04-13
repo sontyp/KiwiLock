@@ -66,7 +66,9 @@ function CheckSignPermission(Sign, Player)
         end
         if Player:HasPermission("SignLock.Bypass") then
             cRoot:Get():BroadcastChat(cChatColor.Rose .. "Player " .. Player:GetName() .. " bypassed a block owned by somebody else")
-            return true
+            return true                                                                 --[[ hat den Block eines anderen Players
+                                                                                             umgeleitet(?!)
+                                                                                             TODO: Weiß nicht wie das gemeint ist...]]
         end
         return false;
     end
